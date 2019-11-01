@@ -21,7 +21,8 @@ class index:
         d = modbus_data_process(c)
         e = postdata(d)
         headers = {"userkey:2512d8b672524137af5e85155276ec4b"}
-        f = requests.post(servername+serverurl, e)
+        url = servername + serverurl
+        f = requests.post(url=url, data=e, headers=headers)
         print(f.status_code)
 
 
