@@ -9,7 +9,7 @@ urls = (
 )
 
 servername = "http://www.yckz003.top"
-serverurl = "/data_up/history_upload"
+serverurl = "/internal/data_up/history_upload"
 class index:
     def GET(self):
         return "hello,world"
