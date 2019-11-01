@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ec9a1cd-0bba-4d58-a3b6-d3beeb883e35" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mqtt_pub.py" beforeDir="false" afterPath="$PROJECT_DIR$/mqtt_pub.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mqtt_sub.py" beforeDir="false" afterPath="$PROJECT_DIR$/mqtt_sub.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postRequestTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/postRequestTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../esp8266/esp8266.ino" beforeDir="false" afterPath="$PROJECT_DIR$/../esp8266/esp8266.ino" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../esp8266/init.h" beforeDir="false" afterPath="$PROJECT_DIR$/../esp8266/init.h" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +22,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Sa8f9rl1RFpqaYgedpG2qplTyL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -168,6 +163,7 @@
       <workItem from="1572162845681" duration="4996000" />
       <workItem from="1572222881867" duration="15497000" />
       <workItem from="1572596822697" duration="33000" />
+      <workItem from="1572605475867" duration="199000" />
     </task>
     <servers />
   </component>

@@ -1,13 +1,15 @@
 import web
 from modbus_process import *
 from data_process import *
+import requests
 import hashlib
 urls = (
     '/', 'index',
     '/wx', 'Handle'
 )
 
-
+servername = "http://www.yckz003.top"
+serverurl = "/data_up/history_upload"
 class index:
     def GET(self):
         return "hello,world"
@@ -17,7 +19,9 @@ class index:
         b = byte2dict(a)
         c = b["data"]
         d = modbus_data_process(c)
-        print(d)
+        e = postdata(d)
+        f = requests.post(servername+serverurl, d)
+        print(f.status_code)
 
 
 # datawechat = {'timestamp': '1572229413',

@@ -7,7 +7,7 @@ tempdata = ['01', '03', '22', '00', '64', '01', '0b', '01', '2c', '00', '00', '0
             '00', '00', '00', '00', '00', '0b', 'b8', '00', '64', '05', 'dc', '00', '00', '00', '00', '00', '01', '00',
             '00', '2d', '7f']
 
-
+# 将接收到的数据按照modbus格式进行解码
 def modbus_data_process(data):
     device_addr = str2int(data[0])
     function_num = str2int(data[1])
@@ -40,8 +40,12 @@ def modbus_data_process(data):
                             'alarm': alarm, 'stop_status': stop_status, 'current_mode': current_mode,
                             'drop_bat_men': drop_bat_men
                             }
-    return json.dumps(machine_running_data)
+    return machine_running_data
 
+# 按照hhlab定义格式向服务器发出post请求
+def postdata(data):
+    fianldata = {"lx":1, 'w':data['temp'], 'sd':data['speed']}
+    return json.dumps(fianldata)
 
 if __name__ == "__main__":
     print(modbus_data_process(tempdata))
