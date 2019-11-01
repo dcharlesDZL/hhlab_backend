@@ -8,8 +8,8 @@ urls = (
     '/wx', 'Handle'
 )
 
-servername = "http://101.132.151.192:100"
-serverurl = ""
+servername = "http://www.yckz003.top"
+serverurl = "/internal/data_up/history_upload"
 class index:
     def GET(self):
         return "hello,world"
@@ -22,8 +22,8 @@ class index:
         e = postdata(d)
         headers = {"userkey:2512d8b672524137af5e85155276ec4b"}
         url = servername + serverurl
-        f = requests.post(url=url, data=e, headers=headers)
-        print(f.status_code)
+        f = requests.post(url=url, data=e)
+        print(f.headers)
 
 
 # datawechat = {'timestamp': '1572229413',
