@@ -8,8 +8,8 @@ urls = (
     '/wx', 'Handle'
 )
 
-servername = "http://www.yckz003.top"
-serverurl = "/internal/data_up/history_upload"
+servername = "http://101.132.151.192:100"
+serverurl = ""
 class index:
     def GET(self):
         return "hello,world"
