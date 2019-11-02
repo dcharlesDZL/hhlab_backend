@@ -8,7 +8,7 @@ urls = (
     '/wx', 'Handle'
 )
 
-servername = "http://www.yckz003.top"
+servername = "http://php.yckz003.top"
 serverurl = "/internal/data_up/history_upload"
 class index:
     def GET(self):
